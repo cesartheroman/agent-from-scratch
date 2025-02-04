@@ -9,9 +9,19 @@ if (!userMessage) {
   process.exit(1)
 }
 
+// let's add the latest message
+await addMessages([{ role: 'user', content: userMessage }])
 const messages = await getMessages()
+
 const response = await runLLM({
-  messages: [...messages, { role: 'user', content: userMessage }],
+  // now sending all messages at once, streamlines
+  messages,
 })
+// NOTE: instead of this old way:
+// const response = await runLLM({
+//   messages: [...messages, { role: 'user', content: userMessage }],
+// })
+
+await addMessages([{ role: 'assistant', content: response }])
 
 console.log(response)
