@@ -1,3 +1,5 @@
 {
-  "messages": []
+  "messages": [{"role": "user", "content": "Hello my name is Cesar"}, {
+    "role": "assistant", "content": "Hi, Cesar"
+  }]
 }
