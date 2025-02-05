@@ -29,6 +29,41 @@
       "content": "Certainly! An AI agent is a software entity that uses artificial intelligence techniques to perform tasks or make decisions autonomously or semi-autonomously. AI agents can perceive their environment through sensors, process information, and take actions to achieve specific goals. They can be simple, like a chatbot that responds to user queries, or complex, like autonomous vehicles that navigate and make driving decisions in real-time. AI agents often utilize machine learning, natural language processing, and other AI methodologies to improve their performance over time.",
       "id": "c1c7ba78-c9d1-4155-a739-a517653285f5",
       "createdAt": "2025-02-04T21:54:51.416Z"
+    },
+    {
+      "role": "user",
+      "content": "what is the weather?",
+      "id": "601a0aad-6c11-478f-be9b-51e67ee24875",
+      "createdAt": "2025-02-04T23:58:07.456Z"
+    },
+    {
+      "role": "user",
+      "content": "what is the weather?",
+      "id": "ad67ae0e-c876-4144-8c14-3e7a7e17f7c3",
+      "createdAt": "2025-02-04T23:59:14.664Z"
+    },
+    {
+      "role": "user",
+      "content": "hi",
+      "id": "376f66f3-023e-4760-81eb-ea54d4b332fd",
+      "createdAt": "2025-02-05T19:28:36.942Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_Bpyxh6roHuKDgonmOKfcM4Bz",
+          "type": "function",
+          "function": {
+            "name": "get_weather",
+            "arguments": "{}"
+          }
+        }
+      ],
+      "refusal": null,
+      "id": "7fa2c388-bacf-4d94-828a-75a1f3bd6f6f",
+      "createdAt": "2025-02-05T19:28:38.140Z"
     }
   ]
 }
