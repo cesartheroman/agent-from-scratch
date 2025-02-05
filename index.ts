@@ -18,7 +18,6 @@ if (!userMessage) {
 // let's add the latest message
 // await addMessages([{ role: 'user', content: userMessage }])
 // const messages = await getMessages()
-//
 // const response = await runLLM({
 //   // now sending all messages at once, streamlines
 //   messages,
@@ -28,10 +27,8 @@ if (!userMessage) {
 const weatherTool = {
   name: 'get_weather',
   parameters: z.object({
-    reasoning: z.string().describe('why did you pick this tool?')
+    reasoning: z.string().describe('why did you pick this tool?'),
   }),
 }
 
-const response = await runAgent({ userMessage, tools: [weatherTool] })
-
-console.log(response)
+await runAgent({ userMessage, tools: [weatherTool] })
