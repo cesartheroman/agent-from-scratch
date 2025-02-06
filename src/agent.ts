@@ -25,10 +25,10 @@ export const runAgent = async ({
     const response = await runLLM({ messages: history, tools })
 
     await addMessages([response])
-    logMessage(response)
 
     if (response.content) {
       loader.stop()
+      logMessage(response)
       return getMessages()
     }
 
