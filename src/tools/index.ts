@@ -1,9 +1,9 @@
-import { generateImageToolDefinition } from './generateImage'
+import { generateImageToolDefinition } from './generateImages'
 import { redditToolDefinition } from './reddit'
-import { dadJokeToolDefinition } from './dadJoke'
+import { dadJokeToolDefiniton } from './dadjoke'
 
 export const tools = [
   generateImageToolDefinition,
   redditToolDefinition,
-  dadJokeToolDefinition,
+  dadJokeToolDefiniton,
 ]
